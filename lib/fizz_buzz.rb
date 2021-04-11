@@ -14,4 +14,3 @@ def fizz_buzz
   end
 end
 
-puts 'Don\'t'
