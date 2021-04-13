@@ -1,0 +1,6 @@
+# to_hex(0, 0, 0)
+# to_hex(255, 255, 255)
+# to_hex(4, 60, 120)
+# to_ints('#000000')
+# to_ints('#ffffff')
+# to_ints('#043c78')
