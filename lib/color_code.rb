@@ -4,3 +4,11 @@
 # to_ints('#000000')
 # to_ints('#ffffff')
 # to_ints('#043c78')
+
+a=[1, 2, 3]
+a[4] = 50
+
+a.delete_at(1)
+a.delete(3)
+
+p a
