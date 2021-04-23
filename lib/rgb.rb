@@ -7,12 +7,8 @@ def to_hex(r, g, b)
 end
 
 def to_ints(hex)
-  r = hex[1..2]
-  b = hex[3..4]
-  g = hex[5..6]
-  ints = []
-  [r, b, g].each do |n|
-    ints << n.hex
+  r, b, g = hex[1..2], hex[3..4], hex[5..6]
+  [r, b, g].map do |n|
+    n.hex
   end
-  ints
 end
