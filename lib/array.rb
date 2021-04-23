@@ -80,16 +80,41 @@
 # p ['a', 'b', 'c'].map {|s| s.upcase}
 # p ['a', 'b', 'c'].map(&:upcase)
 
-def liquid?(temperature)
-  0 <= temperature && temperature < 100
-end
+# def liquid?(temperature)
+#   0 <= temperature && temperature < 100
+# end
 
-p liquid?(1)
-p liquid?(100)
+# p liquid?(1)
+# p liquid?(100)
 
-def liquid?(temperature)
-  (0...100).include?(temperature)
-end
+# def liquid?(temperature)
+#   (0...100).include?(temperature)
+# end
 
-p liquid?(1)
-p liquid?(100)
+# p liquid?(1)
+# p liquid?(100)
+
+# def charge(age)
+#   case age
+#   when 0..5
+#     0
+#   when 6..12
+#     300
+#   when 13..18
+#     600
+#   else
+#     1000
+#   end
+# end
+
+# p charge(3)
+# p charge(15)
+
+numbers = (1..4).to_a
+sum = 0
+numbers.each { |n| sum += n }
+p sum
+
+numbers = []
+(1..10).step(2){ |n| numbers << n}
+p numbers
