@@ -36,11 +36,26 @@
 # puts sum
 
 # map/collect
-numbers = [1, 2, 3]
-new_numbers = numbers.map{|n| n * 10}
-p new_numbers
+# numbers = [1, 2, 3]
+# new_numbers = numbers.map{|n| n * 10}
+# p new_numbers
 
+# numbers = [1, 2, 3]
+# new_numbers = []
+# numbers.each {|n| new_numbers << n * 10}
+# p new_numbers
+
+# select
 numbers = [1, 2, 3]
-new_numbers = []
-numbers.each {|n| new_numbers << n * 10}
-p new_numbers
+even_numbers = numbers.select{|n| n.even?}
+p even_numbers
+
+# find_all
+numbers = [1, 2, 3]
+even_numbers = numbers.find_all{|n| n.even?}
+p even_numbers
+
+# reject
+numbers = [1, 2, 3]
+even_numbers = numbers.reject{|n| n.even?}
+p even_numbers
