@@ -60,22 +60,36 @@
 # even_numbers = numbers.reject{|n| n.even?}
 # p even_numbers
 
-numbers = [1, 2, 3]
-non_multiples_of_three = numbers.reject {|n| n % 3 == 0 }
-p non_multiples_of_three
+# numbers = [1, 2, 3]
+# non_multiples_of_three = numbers.reject {|n| n % 3 == 0 }
+# p non_multiples_of_three
 
-# inject
-numbers = [1, 2, 3]
-sum = numbers.inject(0){ |result, n| result + n}
-p sum
+# # inject
+# numbers = [1, 2, 3]
+# sum = numbers.inject(0){ |result, n| result + n}
+# p sum
 
-# reduce
-numbers = [1, 2, 3]
-sum = numbers.reduce(0){ |result, n| result + n}
-p sum
+# # reduce
+# numbers = [1, 2, 3]
+# sum = numbers.reduce(0){ |result, n| result + n}
+# p sum
 
-p ['Mon', 'Tue', 'Wed'].inject('Sun'){ |result, n| result + n}
+# p ['Mon', 'Tue', 'Wed'].inject('Sun'){ |result, n| result + n}
 
-&:で省力した描き方
-p ['a', 'b', 'c'].map {|s| s.upcase}
-p ['a', 'b', 'c'].map(&:upcase)
+# # &:で省力した描き方
+# p ['a', 'b', 'c'].map {|s| s.upcase}
+# p ['a', 'b', 'c'].map(&:upcase)
+
+def liquid?(temperature)
+  0 <= temperature && temperature < 100
+end
+
+p liquid?(1)
+p liquid?(100)
+
+def liquid?(temperature)
+  (0...100).include?(temperature)
+end
+
+p liquid?(1)
+p liquid?(100)
