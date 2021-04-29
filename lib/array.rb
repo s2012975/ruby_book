@@ -119,10 +119,21 @@
 # (1..10).step(2){ |n| numbers << n}
 # p numbers
 
-a = [1, 2, 3]
+# a = [1, 2, 3]
 
-puts a[1, 2]
+# puts a[1, 2]
 
-b = [3, 4, 5]
+# b = [3, 4, 5]
 
-puts a|b
+# puts a - b
+
+# a = []
+# a.push(1)
+# a.push(2,3)
+# p a
+
+def greeting(*names)
+  p "#{names.join('と')}、こんにちは"
+end
+
+greeting('田中さん', '鈴木さん')
