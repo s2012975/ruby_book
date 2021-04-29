@@ -110,11 +110,19 @@
 # p charge(3)
 # p charge(15)
 
-numbers = (1..4).to_a
-sum = 0
-numbers.each { |n| sum += n }
-p sum
+# numbers = (1..4).to_a
+# sum = 0
+# numbers.each { |n| sum += n }
+# p sum
 
-numbers = []
-(1..10).step(2){ |n| numbers << n}
-p numbers
+# numbers = []
+# (1..10).step(2){ |n| numbers << n}
+# p numbers
+
+a = [1, 2, 3]
+
+puts a[1, 2]
+
+b = [3, 4, 5]
+
+puts a|b
