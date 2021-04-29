@@ -137,3 +137,11 @@ def greeting(*names)
 end
 
 greeting('田中さん', '鈴木さん')
+
+p ['apple', 'melon', 'orange']
+
+p %W!apple melon orange!
+p %W(apple melon orange)
+
+p 'ruby'.chars
+p 'r,u,b,y'.split(',')
